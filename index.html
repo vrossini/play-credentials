@@ -14,37 +14,26 @@
       text-align: center;
     }
     main {
-      max-width: 900px;
+      max-width: 420px;
       margin: 0 auto;
     }
     h1 { font-size: 28px; margin-bottom: 8px; }
     .subtitle { color: #5f6b76; margin-bottom: 28px; }
-    .codes {
+    .links {
       display: flex;
-      flex-wrap: wrap;
-      justify-content: center;
-      gap: 24px;
+      flex-direction: column;
+      gap: 16px;
     }
-    .card {
+    .links a {
+      display: block;
       background: white;
       border-radius: 14px;
-      padding: 24px;
+      padding: 20px 24px;
       box-shadow: 0 2px 12px rgba(0,0,0,.08);
-      width: min(360px, calc(100% - 48px));
-    }
-    .card h2 { margin-top: 0; }
-    .card img {
-      display: block;
-      width: 100%;
-      max-width: 330px;
-      height: auto;
-      margin: 16px auto;
-    }
-    .code {
-      font-family: monospace;
-      font-size: 14px;
-      word-break: break-all;
-      color: #39424e;
+      color: #17202a;
+      font-size: 20px;
+      font-weight: bold;
+      text-decoration: none;
     }
   </style>
 </head>
@@ -53,19 +42,10 @@
     <h1>Google Play App Review Credentials</h1>
     <p class="subtitle">QR codes for application activation</p>
 
-    <div class="codes">
-      <section class="card">
-        <h2>Totem</h2>
-        <img src="qr-totem.png" alt="QR Code - Totem">
-        <div class="code">7NkTp9_EgrCRTdmBtYt5ys_6AieFNNf46sArE8G7Y3Y</div>
-      </section>
-
-      <section class="card">
-        <h2>Smart POS</h2>
-        <img src="qr-smartpos.png" alt="QR Code - Smart POS">
-        <div class="code">xHwXmf1tQfso0TF7H-neXAD5yPzO-JZcRj-NiXkVxmw</div>
-      </section>
-    </div>
+    <nav class="links">
+      <a href="totem/">Totem</a>
+      <a href="smartpos/">Smart POS</a>
+    </nav>
   </main>
 </body>
 </html>
